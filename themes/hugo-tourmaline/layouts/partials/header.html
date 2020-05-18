@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
 
-<!--this loads all stylesheets, metadata tags, favicons, and jquery -->
-{{ partial "head_includes.html" . }}
 
   <body>
     <div id="appTidyverseSite" {{ if not .IsHome }}class="shrinkHeader alwaysShrinkHeader"{{ end }}>
