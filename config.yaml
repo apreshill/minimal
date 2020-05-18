@@ -45,21 +45,9 @@ privacy:
 
 menu:
   main:
-  - name: Packages
-    url: /packages/
+  - name: Blog
+    url: /blog/
     weight: 1
-  - name: News
-    url: /news/
-    weight: 2
-  - name: Learn
-    url: /learn/
-    weight: 3
-  - name: Help
-    url: /help/
-    weight: 4
-  - name: Contribute
-    url: /contribute/
-    weight: 5
 
 params:
   description: >-
