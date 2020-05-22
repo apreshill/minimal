@@ -1,27 +1,25 @@
 ---
 title: stringr 1.4.0
-author: [mine, mara Averick, Alison]
+author:
+- mine
+- mara Averick
+- Alison
 slug: stringr-1-4-0
 date: '2019-02-21'
-description: >
-    stringr 1.4.0 is now on CRAN!
+description: |
+  stringr 1.4.0 is now on CRAN!
 categories:
-  - learn
+- learn
 photo:
   url: https://unsplash.com/photos/o-d37kiKqqc
   author: Maranda Vandergriff
 output: hugodown::hugo_document
+rmd_hash: d49f8286a4beb6aa
+
 ---
 
-```{r setup, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE, comment = "#>", 
-  fig.width = 7, 
-  fig.align = 'center',
-  fig.asp = 0.618, # 1 / phi
-  out.width = "700px"
-)
-```
+
+
 
 <html>
 <style>
@@ -38,11 +36,13 @@ working with strings as easy as possible. For a full list of changes, please see
 
 You can install the released version from CRAN:
 
-```{r eval = FALSE}
+
+```r
 install.packages("stringr")
 ```
 
-```{r}
+
+```r
 library(stringr)
 ```
 
@@ -53,18 +53,25 @@ Thanks to the hard work of [John Harmon](https://github.com/jonthegeek) at [Tidy
 
 [`str_starts()`](https://stringr.tidyverse.org/reference/str_starts.html) and [`str_ends()`](https://stringr.tidyverse.org/reference/str_starts.html) detect the presence or absence of patterns at the beginning or end of strings.
  
-```{r str-starts}
+
+```r
 fruit <- c("apple", "banana", "pear", "pineapple")
 str_starts(fruit, "p")
+#> [1] FALSE FALSE  TRUE  TRUE
 str_starts(fruit, "p", negate = TRUE)
+#> [1]  TRUE  TRUE FALSE FALSE
 str_ends(fruit, "e")
+#> [1]  TRUE FALSE FALSE  TRUE
 str_ends(fruit, "e", negate = TRUE)
+#> [1] FALSE  TRUE  TRUE FALSE
 ```
  
 The new [`str_to_sentence()`](https://stringr.tidyverse.org/reference/case.html) function capitalizes strings with sentence case, like so:
 
-```{r str-sentence}
+
+```r
 str_to_sentence("the quick brown dog")
+#> [1] "The quick brown dog"
 ```
 
 ## Support for `negate`

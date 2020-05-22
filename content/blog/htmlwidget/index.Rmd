@@ -1,6 +1,6 @@
 ---
 title: diagrammer
-output: hugo_document
+output: hugodown::hugo_document
 ---
 
 ```{r}

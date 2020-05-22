@@ -1,31 +1,24 @@
 ---
 title: haven 2.1.0
-author: 
-  - carl
-  - Garrett
+author:
+- carl
+- Garrett
 slug: haven-2-1-0
 date: '2019-02-19'
-description: > 
+description: |
   haven 2.1.0 is now on CRAN!
 categories:
-  - other
+- other
 photo:
   url: https://www.pexels.com/photo/beach-lighthouse-3491/
   author: Skitterphoto
 output: hugodown::hugo_document
+rmd_hash: 8ffd8d571860c4ea
+
 ---
 
-```{r setup, include = FALSE}
-library(haven)
-knitr::opts_chunk$set(
-  collapse = TRUE, 
-  comment = "#>", 
-  fig.width = 7, 
-  fig.align = 'center',
-  fig.asp = 0.618, # 1 / phi
-  out.width = "700px"
-)
-```
+
+
 
 We're delighted to announce that [haven 2.1.0](https://haven.tidyverse.org/) is now on CRAN. haven enables R to read and write various data formats used by other statistical packages by wrapping the [ReadStat](https://github.com/WizardMac/ReadStat) C library written by [Evan Miller](https://www.evanmiller.org/). For a full account of updates in this release, see the [Changelog](https://haven.tidyverse.org/news/index.html).
 
@@ -36,8 +29,14 @@ Both [`labelled()`](https://haven.tidyverse.org/reference/labelled.html) and [`l
 
 `labelled` objects now get pretty printing that shows the labels and `NA` values when inside of a `tbl_df`. You can turn this behaviour off by using `option(haven.show_pillar_labels = FALSE)`. 
 
-```{r haven-labelled}
+
+```r
 tibble::tibble(s = haven::labelled(c(1, 10), labels = c("A" = 1, "B" = 10)))
+#> # A tibble: 2 x 1
+#>           s
+#>   <dbl+lbl>
+#> 1     1 [A]
+#> 2    10 [B]
 ```
 
 
