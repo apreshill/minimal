@@ -12,6 +12,7 @@ categories:
 photo:
   url: https://www.pexels.com/photo/beach-lighthouse-3491/
   author: Skitterphoto
+output: hugo_document
 ---
 
 ```{r setup, include = FALSE}
