@@ -18,6 +18,9 @@ markup:
   highlight:
     style: pygments
 
+taxonomies:
+  category: categories
+
 menu:
   main:
   - name: Home
