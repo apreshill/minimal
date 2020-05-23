@@ -1,7 +1,9 @@
 ---
 title: diagrammer
 output: hugodown::hugo_document
-rmd_hash: 7b7e5d4c7a8ce3a7
+categories:
+- package
+rmd_hash: 4f24b6e85e7255ef
 html_dependencies:
 - <script src="htmlwidgets-1.5.1/htmlwidgets.js"></script>
 - <script src="viz-1.8.2/viz.js"></script>
@@ -23,5 +25,5 @@ grViz("
   }")
 ```
 
-<!--html_preserve--><div id="htmlwidget-6f10e5e8eea5639b161c" style="width:700px;height:415.296px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-6f10e5e8eea5639b161c">{"x":{"diagram":"\n  digraph {\n    layout = twopi\n    node [shape = circle]\n    A -> {B C D} \n  }","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script><!--/html_preserve-->
+<!--html_preserve--><div id="htmlwidget-3f38a8b5c2d8243d691f" style="width:700px;height:415.296px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-3f38a8b5c2d8243d691f">{"x":{"diagram":"\n  digraph {\n    layout = twopi\n    node [shape = circle]\n    A -> {B C D} \n  }","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script><!--/html_preserve-->

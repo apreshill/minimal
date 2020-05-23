@@ -2,7 +2,7 @@
 title: diagrammer
 output: hugodown::hugo_document
 categories:
-  - package
+- package
 ---
 
 ```{r}
